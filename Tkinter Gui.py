@@ -89,5 +89,5 @@ def action():
             m_box.showinfo('Done!','Your information is saved')
         
 sub = ttk.Button(labelwin,width=16,text='Submit',command= action)
-sub.grid(rowspan=5,columnspan=2)
+sub.grid(row=4,columnspan=2)
 win.mainloop()
