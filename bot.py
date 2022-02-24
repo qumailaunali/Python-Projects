@@ -4,8 +4,10 @@ from selenium import webdriver
 br = webdriver.Edge("D:\\Downloads(D)\\webdriver\\msedgedriver.exe")
 br.get("https:/www.facebook.com/")
 
-usr = "sonofaunali@gmail.com"
-passw = "luckymob"
+user_email= input("Enter your email : ")
+user_pass = input("Enter your password : ")
+usr = user_email
+passw = user_pass
 
 user = br.find_element_by_id("email")
 user.clear()
